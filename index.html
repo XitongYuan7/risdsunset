@@ -61,7 +61,7 @@
             flex-direction: column;
             /* align-items: center; */
             gap: 50px;
-            width: 100%;
+           
         }
 
         .backdrop-flex {
@@ -69,6 +69,7 @@
             flex-direction: row;
             padding-left: 25px;
             justify-content: flex-start;
+            padding-bottom: 150px;
             padding-top: 200px;
             /* gap: 120px; */
             align-items: left;
@@ -79,87 +80,88 @@
 
         h1 {
             font-family: "Brutal", sans-serif;
-    font-size:7vw;
- 
-    /* border: 2px dashed white; */
-    /* background-color: rgba(255, 255, 255, 0.2); Black background with 30% opacity */
-    text-align: left;
-    /* font-weight: normal; */
-  color: #ff44c1;
-    z-index: 2;
-    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
-     -webkit-text-stroke: 10px #16dbc7;
-    paint-order: stroke fill; 
-}
+            font-size: 7vw;
 
-     .subtitle {
-        font-family: monospace, sans-serif;
+            /* border: 2px dashed white; */
+            /* background-color: rgba(255, 255, 255, 0.2); Black background with 30% opacity */
+            text-align: left;
+            /* font-weight: normal; */
+            color: #ff44c1;
+            z-index: 2;
+            text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+            -webkit-text-stroke: 10px #16dbc7;
+            paint-order: stroke fill;
+        }
+
+        .subtitle {
+            font-family: monospace, sans-serif;
             font-size: 0.88vw;
             margin-top: 20px;
-line-height: 1.3;
+            line-height: 1.3;
             text-align: left;
             font-weight: normal;
             color: #16dac6;
             z-index: 3;
             text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
             -webkit-text-stroke: 0px white;
-            paint-order: stroke fill; 
+            paint-order: stroke fill;
         }
 
 
         /* Navigation Bar */
-.nav-bar {
-    font-family: "Brutal", sans-serif;
-        font-weight: bold;
-  width: 100vw;
-  display: flex;
-  justify-content: flex-start; 
-  gap: 200px;/* Aligns items to the left */
-  align-items: center;
-  padding: 40px;
-  padding-top: 10px;
-  padding-right: 80px;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
+        .nav-bar {
+            font-family: "Brutal", sans-serif;
+            font-weight: bold;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+     
+            /* Aligns items to the left */
+            align-items: center;
+            padding: 40px;
+            padding-top: 10px;
+            padding-right: 80px;
+            position: fixed;
+            top: 0;
+            z-index: 99999999;
+        }
 
 
-.nav-links {
-    list-style-type: none;
-    display: flex;
-    gap: 50px;
-    transform: translateY(15px);
+        .nav-links {
+            list-style-type: none;
+            display: flex;
+            gap: 50px;
+            transform: translateY(15px);
 
 
-}
+        }
 
-.nav-links li a {
+        .nav-links li a {
 
-    color: white;
-    text-decoration: none;
-    font-size: 2rem;
-    color: #000;
-    /* text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+            color: white;
+            text-decoration: none;
+            font-size: 2rem;
+            color: #000;
+            /* text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
      -webkit-text-stroke: 5px #16dbc7; */
-    paint-order: stroke fill; 
-}
+            paint-order: stroke fill;
+        }
 
-.nav-links li a:hover {
-    text-decoration: underline;
-}
+        .nav-links li a:hover {
+            text-decoration: underline;
+        }
 
 
 
         .tree {
-        font-family: monospace, sans-serif;
+            font-family: monospace, sans-serif;
             font-size: 2.6vw;
             text-align: left;
             color: #000;
             z-index: 2;
             text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
             -webkit-text-stroke: 0px white;
-            paint-order: stroke fill; 
+            paint-order: stroke fill;
         }
 
         h2 {
@@ -169,7 +171,7 @@ line-height: 1.3;
             color: black;
             font-size: 2vw;
             z-index: 2;
-            
+
             /* -webkit-text-stroke: 1px black;
             paint-order: stroke fill; */
         }
@@ -182,19 +184,19 @@ line-height: 1.3;
             z-index: 2;
             font-weight: bold;
             color: #ff44c1;
-/* text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+            /* text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
      -webkit-text-stroke: 10px #16dbc7;
     paint-order: stroke fill; 
             /* outline: 2px dashed white;
             border-radius: 100%; */
-              /* font-weight: normal;
+            /* font-weight: normal;
             outline: 2px dashed white;
             /* transform: skew(-20deg, 0deg);  */
             font-size: 5.5vw;
             padding-left: 90px;
             line-height: 1.2;
-            
-         
+
+
             /* Adjust spacing if needed */
         }
 
@@ -202,20 +204,20 @@ line-height: 1.3;
             text-align: left;
             font-weight: bold;
             font-size: 3vw;
-padding-top: 10px;
+            padding-top: 10px;
             color: #000;
-text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
-     -webkit-text-stroke: 0px #16dac6;
-    paint-order: stroke fill; 
-            
-            
-            
+            text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
+            -webkit-text-stroke: 0px #16dac6;
+            paint-order: stroke fill;
+
+
+
         }
 
 
 
 
-/* 
+        /* 
 
         .sunset-time-container-wrapper {
             text-align: left;
@@ -240,36 +242,40 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
         } */
 
 
-         .clock {
-            width: 750px;
-            height: 400px;
-          
-            
-              /* background: radial-gradient(circle, #ffd6e8 0%, #ff5bc8 50%, #c067fb 100%); 
+        .clock {
+            /* width: 750px;
+            height: 400px; */
+
+            width: 50%;
+          aspect-ratio: 15/8;
+          position: relative;
+
+            /* background: radial-gradient(circle, #ffd6e8 0%, #ff5bc8 50%, #c067fb 100%); 
             z-index: 0;
             box-shadow: inset 0 0 30px 15px rgb(255, 255, 255);
             outline: 6px dashed #16dbc7;
             border-radius: 100%; */
-            
-        
+
+
             background: radial-gradient(circle, #fff 0%, #FCE300 50%, #FCE300 100%);
             z-index: 0;
-            box-shadow: inset 0 0 30px 15px rgba(255, 91, 200, 1); /* White glow */
-            outline: 6px solid #16dbc7; 
+            box-shadow: inset 0 0 30px 15px rgba(255, 91, 200, 1);
+            /* White glow */
+            outline: 6px solid #16dbc7;
             /* background-color: #ffffff; */
             /* border: 4px dashed white; */
             border-radius: 100%;
             transform: skew(20deg, 0deg);
-         
 
-          
+
+
 
             /* border-radius: 100%;
             background-color: #ffffff;
             font-family: "Brutal", sans-serif;
             border: 5px solid white;
             box-shadow: inset 2px 3px 8px 0 rgba(0, 0, 0, 0.1); */
-        } 
+        }
 
         .wrap {
             /* overflow: hidden; */
@@ -277,16 +283,17 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
             width: 100%;
             height: 100%;
             border-radius: 100%;
+            transform: skew(-20deg, 0deg);
         }
 
-        .minute,
+/*      
         .hour {
             position: absolute;
-            height: 150px;
-            width: 4px;
+            height: 40%;
+            width: 0.5%;
             margin: auto;
-            top: -50%;
-            left: 0;
+            top: -40%;
+            left: 0%;
             bottom: 0;
             right: 0;
             background: black;
@@ -297,21 +304,31 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
         }
 
         .minute {
+
+
             position: absolute;
-            height: 300px;
-            width: 4px;
-            top: -78%;
-            left: 0;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
+            height: 60%;
+            width: 0.5%;
+            top: -10%;
+            left: 50%;
+            bottom: 0;
+            right: 0;
+            background: black;
+            transform-origin: bottom center;
             transform: rotate(90deg);
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            z-index: 0;
+        }
+
+
         }
 
         .second {
             position: absolute;
             height: 90px;
-            width: 2px;
+            width: 0.25%;
             margin: auto;
-            top: -26%;
+            top: 0;
             left: 0;
             bottom: 0;
             right: 0;
@@ -336,12 +353,61 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
             border-radius: 100px;
             margin: auto;
             z-index: 0;
-        }
+        } */
 
 
+
+        .minute,
+.hour,
+.second {
+    position: absolute;
+    width: 0.5%; /* Scales with clock */
+    height: 40%; /* Relative to clock height */
+    background: black;
+    top: 0%; /* Adjust relative to the center of the skewed clock */
+    left: 50%; /* Center horizontally */
+    transform-origin: bottom center; /* Rotate around bottom */
+    transform: rotate(0deg) skew(20deg, 0deg); /* Match parent skew */
+}
+
+.minute {
+    height: 75%; /* Slightly longer than the hour hand */
+    background: #333;
+    top: -25%;
+}
+
+.hour {
+    height: 45%; /* Shorter hand */
+    background: black;
+    top: 5%;
+}
+
+.second {
+    height: 50%; /* Longest hand */
+    background: #FF4B3E;
+    z-index: 1; /* Ensure it appears above other hands */
+}
+
+.dot {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 12px;
+            height: 12px;
+            border-radius: 100px;
+            background: white;
+            border: 2px solid #1b1b1b;
+            border-radius: 100px;
+            margin: auto;
+            z-index: 1;
+        } 
 
 
         .image-container {
+            background: linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%);
+
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -359,6 +425,7 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
         #risdImage {
             width: 100vw;
+
 
         }
 
@@ -378,15 +445,16 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
             display: flex;
             flex-direction: column;
             align-items: center;
+            background-color: #f0f8ff;
             color: #ffffff;
         }
+
         .yellow-circle {
             background-image: url("sun.svg");
             background-color: transparent;
             background-repeat: no-repeat;
             background-size: contain;
-            width: 500px;
-            height: 500px;
+     
             pointer-events: none;
             z-index: 3;
             transition: top 0.3s ease-out, left 0.3s ease-out;
@@ -396,15 +464,25 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
         .yellow-circle {
             position: absolute;
-            width: 330px;
-            height: 380px;
+            width: 300px;
+            height: 300px;
             background-color: transparent;
             border-radius: 50%;
             pointer-events: none;
             z-index: 3;
             transition: top 0.3s ease-out, left 0.3s ease-out;
-           
-        } 
+
+        }
+        .cloud-container {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 999999;
+            pointer-events: none;
+        }
 
         .moon-shape {
             background-image: url("moon.svg");
@@ -471,7 +549,7 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
         .cloud1 {
             position: absolute;
-            top: 135px;
+            top: 10vh;
             width: 200px;
             animation: cloud1 20s linear infinite;
             z-index: 11;
@@ -490,7 +568,7 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
         .cloud2 {
             position: absolute;
-            top: 200px;
+            top: 20vh;
             width: 250px;
             animation: cloud2 35s linear infinite;
             z-index: 11;
@@ -508,7 +586,7 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
         .cloud3 {
             position: absolute;
-            top: 300px;
+            top: 30vh;
             width: 300px;
             animation: cloud3 24s linear infinite;
             z-index: 11;
@@ -526,7 +604,7 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
         .cloud4 {
             position: absolute;
-            top: 600px;
+            top: 40vh;
             width: 150px;
             animation: cloud4 27.5s linear infinite;
             z-index: 11;
@@ -545,7 +623,7 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
         .cloud5 {
             position: absolute;
-            top: 450px;
+            top: 50vh;
             width: 200px;
             animation: cloud5 34s linear infinite;
             z-index: 11;
@@ -561,10 +639,31 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
             }
         }
 
+        .cloud6 {
+            position: absolute;
+            top: 70vh;
+            width: 200px;
+            animation: cloud5 34s linear infinite;
+            z-index: 11;
+        }
+
+        @keyframes cloud6 {
+            0% {
+                left: -1400px;
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
 
 
         @media screen and (max-width: 1000px) {
 
+            ..sunset-time-container-wrapper {
+                padding-top: 60px;
+            }
             .cloud1 {
                 width: 80px;
             }
@@ -623,243 +722,252 @@ text-shadow: 0 0 0px white, 0 0 0px white, 0 0 0px white;
 
     <!-- Backdrop Div with Title and Clock -->
     <div class="backdrop" id="backdrop" aria-label="Backdrop with Title">
-    
 
-            <div class="nav-bar">
-                <div class="backdrop-content">
-                    <h1>risd sunset</h1></div>
-                <ul class="nav-links">
-                    <li>   <a href="places/">explore</a></li>                    
-                    <li><a href="https://xitongyuan.com/" onclick="window.open('https://xitongyuan.com/', '_blank'); return false;">contact</a></li>
-                </ul>
+
+        <div class="nav-bar">
+            <div class="backdrop-content">
+                <h1>risd sunset</h1>
+            </div>
+            <ul class="nav-links">
+                <li> <a href="places/">explore</a></li>
+                <li><a href="https://xitongyuan.com/"
+                        onclick="window.open('https://xitongyuan.com/', '_blank'); return false;">contact</a></li>
+            </ul>
+        </div>
+
+        <div class="backdrop-flex">
+            <div class="clock">
+                <div class="wrap">
+                    <span class="hour"></span>
+                    <span class="minute"></span>
+                    <span class="second"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
 
-            <div class="backdrop-flex">
-                <div class="clock">
-                    <div class="wrap">
-                        <span class="hour"></span>
-                        <span class="minute"></span>
-                        <span class="second"></span>
-                        <span class="dot"></span>
-                    </div>
-                </div>
-
-                <div class="sunset-time-container-wrapper">
-                    <div class="sunset-time-container" id="sunset-time-container" aria-live="polite">Loading sunset
-                        time...</div>
-                    <h2>till sunset...<div class="tree">
-                     <pre> 
+            <div class="sunset-time-container-wrapper">
+                <div class="sunset-time-container" id="sunset-time-container" aria-live="polite">Loading sunset
+                    time...</div>
+                <h2>till sunset...<div class="tree">
+                        <pre>
             _\/_
        _\/_ //o\
        //o\   |
          |    |
          |</pre>
-                    </div></h2>
-                </div>
-
-          
-                <img src="cloud.svg" class="cloud1" />
-                <img src="cloud.svg" class="cloud2" />
-                <img src="cloud.svg" class="cloud3" />
-                <img src="cloud.svg" class="cloud4" />
-                <img src="cloud.svg" class="cloud5" />
-       
-
-
+                    </div>
+                </h2>
             </div>
 
-            <!-- Image Div with Scrolling Content -->
-            <!-- <div class="image-container" id="image-section" aria-label="Image of Providence Sunset">
+
+
+        </div>
+
+        <!-- Image Div with Scrolling Content -->
+        <!-- <div class="image-container" id="image-section" aria-label="Image of Providence Sunset">
         <div class="hover-center">hover in the sky</div>
         <img src="backdrop.svg" alt="Image of RISD Sunset">
         <div class="yellow-circle" id="yellow-circle"></div>
     </div> -->
-            <div>
+        <div>
 
-                <div class="image-container" id="image-section" aria-label="Image of Providence Sunset">
-                    <div class="hover-center">scroll down</div>
-                    <img id="risdImage" src="backdrop.svg" alt="Image of RISD Sunset">
+            <div class="image-container" id="image-section" aria-label="Image of Providence Sunset">
+                <!-- <div class="hover-center">scroll down</div> -->
+                <img id="risdImage" src="backdrop.svg" alt="Image of RISD Sunset">
 
-                    <div class="yellow-circle" id="yellow-circle"></div>
-                    <img src="cloud.svg" class="cloud1" />
-                    <img src="cloud.svg" class="cloud2" />
-                    <img src="cloud.svg" class="cloud3" />
-                    <img src="cloud.svg" class="cloud4" />
-                    <img src="cloud.svg" class="cloud5" />
-                    
-                 
-                    <!-- <img src="cloud.svg" class="cloud4"/>
+                <div class="yellow-circle" id="yellow-circle"></div>
+
+
+                <!-- <img src="cloud.svg" class="cloud4"/>
                     <img src="cloud.svg" class="cloud5"/>
                     <img src="cloud.svg" class="cloud6"/> -->
-                </div>
             </div>
+        </div>
+     
+        <!-- <img src="cloud.svg" class="cloud1" />
+        <img src="cloud.svg" class="cloud2" />
+        <img src="cloud.svg" class="cloud3" />
+        <img src="cloud.svg" class="cloud4" />
+        <img src="cloud.svg" class="cloud5" /> -->
 
-            <script>
-                var inc = 1000;
 
-                clock();
+        <div class="cloud-container">
 
-                function clock() {
-                    const date = new Date();
+            <img src="cloud.svg" class="cloud1" />
+            <img src="cloud.svg" class="cloud2" />
+            <img src="cloud.svg" class="cloud3" />
+            <img src="cloud.svg" class="cloud4" />
+            <img src="cloud.svg" class="cloud5" />
+        </div>
 
-                    const hours = ((date.getHours() + 11) % 12 + 1);
-                    const minutes = date.getMinutes();
-                    const seconds = date.getSeconds();
 
-                    const hour = hours * 30;
-                    const minute = minutes * 6;
-                    const second = seconds * 6;
 
-                    document.querySelector('.hour').style.transform = `rotate(${hour}deg)`;
-                    document.querySelector('.minute').style.transform = `rotate(${minute}deg)`;
-                    document.querySelector('.second').style.transform = `rotate(${second}deg)`;
-                }
+        <script>
+            var inc = 1000;
 
-                setInterval(clock, inc);
+            clock();
 
-                async function getSunsetTime() {
-                    try {
-                        const response = await fetch('https://api.sunrise-sunset.org/json?lat=41.8240&lng=-71.4128&formatted=0');
-                        const data = await response.json();
-                        const now = new Date();
-                        let sunsetDateTime = new Date(data.results.sunset);
+            function clock() {
+                const date = new Date();
 
-                        // Check if sunset time has already passed for today
-                        if (sunsetDateTime < now) {
-                            // If the sunset time has passed, get the next day's sunset time
-                            sunsetDateTime.setDate(sunsetDateTime.getDate() + 1);
+                const hours = ((date.getHours() + 11) % 12 + 1);
+                const minutes = date.getMinutes();
+                const seconds = date.getSeconds();
+
+                const hour = hours * 30;
+                const minute = minutes * 6;
+                const second = seconds * 6;
+
+                document.querySelector('.hour').style.transform = `rotate(${hour}deg)`;
+                document.querySelector('.minute').style.transform = `rotate(${minute}deg)`;
+                document.querySelector('.second').style.transform = `rotate(${second}deg)`;
+            }
+
+            setInterval(clock, inc);
+
+            async function getSunsetTime() {
+                try {
+                    const response = await fetch('https://api.sunrise-sunset.org/json?lat=41.8240&lng=-71.4128&formatted=0');
+                    const data = await response.json();
+                    const now = new Date();
+                    let sunsetDateTime = new Date(data.results.sunset);
+
+                    // Check if sunset time has already passed for today
+                    if (sunsetDateTime < now) {
+                        // If the sunset time has passed, get the next day's sunset time
+                        sunsetDateTime.setDate(sunsetDateTime.getDate() + 1);
+                    }
+
+                    updateCountdown(sunsetDateTime);
+                    setInterval(() => {
+                        if (new Date() >= sunsetDateTime) {
+                            // Refresh the sunset time once the current one has passed
+                            getSunsetTime();
+                        } else {
+                            updateCountdown(sunsetDateTime);
                         }
-
-                        updateCountdown(sunsetDateTime);
-                        setInterval(() => {
-                            if (new Date() >= sunsetDateTime) {
-                                // Refresh the sunset time once the current one has passed
-                                getSunsetTime();
-                            } else {
-                                updateCountdown(sunsetDateTime);
-                            }
-                        }, 1000);
-                    } catch (error) {
-                        console.error('Error fetching sunset time:', error);
-                    }
+                    }, 1000);
+                } catch (error) {
+                    console.error('Error fetching sunset time:', error);
                 }
+            }
 
-                function updateCountdown(sunsetDateTime) {
-                    const now = new Date();
-                    const timeDiff = sunsetDateTime - now;
-                    if (timeDiff > 0) {
-                        const hours = Math.floor(timeDiff / (1000 * 60 * 60));
-                        const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
-                        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
-                        document.getElementById('sunset-time-container').innerText = `${hours}h ${minutes}m ${seconds}s`;
-                    } else {
-                        document.getElementById('sunset-time-container').innerText = "The sun has set.";
-                    }
+            function updateCountdown(sunsetDateTime) {
+                const now = new Date();
+                const timeDiff = sunsetDateTime - now;
+                if (timeDiff > 0) {
+                    const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+                    const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+                    document.getElementById('sunset-time-container').innerText = `${hours}h ${minutes}m ${seconds}s`;
+                } else {
+                    document.getElementById('sunset-time-container').innerText = "The sun has set.";
                 }
+            }
 
-                function updateGradient() {
-                    const now = new Date();
-                    const minutes = now.getHours() * 60 + now.getMinutes();
-                    const gradient = document.getElementById('gradient-background');
+            function updateGradient() {
+                const now = new Date();
+                const minutes = now.getHours() * 60 + now.getMinutes();
+                const gradient = document.getElementById('gradient-background');
 
-                    const gradients = [
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 12:30 AM - 1:00 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 1:00 AM - 1:30 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 1:30 AM - 2:00 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 2:00 AM - 2:30 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 2:30 AM - 3:00 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 3:00 AM - 3:30 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 3:30 AM - 4:00 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 4:00 AM - 4:30 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)',// 4:30 AM - 5:00 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 5:00 AM - 5:30 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 5:30 AM - 6:00 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)',// 6:00 AM - 6:30 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 6:30 AM - 7:00 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 7:00 AM - 7:30 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 7:30 AM - 8:00 AM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 8:00 AM - 8:30 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 8:30 AM - 9:00 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:00 AM - 9:30 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:30 AM - 10:00 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 10:00 AM - 10:30 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 10:30 AM - 11:00 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 11:00 AM - 11:30 AM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 11:30 AM - 12:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 12:00 PM - 12:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 12:30 PM - 1:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 1:00 PM - 1:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 1:30 PM - 2:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 2:00 PM - 2:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 2:30 PM - 3:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 3:00 PM - 3:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 3:30 PM - 4:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 4:00 PM - 4:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 4:30 PM - 5:00 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 5:00 PM - 5:30 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 5:30 PM - 6:00 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 6:00 PM - 6:30 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 6:30 PM - 7:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 7:00 PM - 7:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 7:30 PM - 8:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 8:00 PM - 8:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 8:30 PM - 9:00 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:00 PM - 9:30 PM
-                        'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:30 PM - 10:00 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 10:00 PM - 10:30 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 10:30 PM - 11:00 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 11:00 PM - 11:30 PM
-                        'linear-gradient(180deg, rgba(255,214,232,1) 0%, rgba(255,91,200,1) 50%, rgba(192,103,251,1) 100%)', // 11:30 PM - 12:00 AM
-                    ];
+                const gradients = [
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 12:30 AM - 1:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 1:00 AM - 1:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 1:30 AM - 2:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 2:00 AM - 2:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 2:30 AM - 3:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 3:00 AM - 3:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 3:30 AM - 4:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 4:00 AM - 4:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 4:30 AM - 5:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 5:00 AM - 5:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 5:30 AM - 6:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 6:00 AM - 6:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 6:30 AM - 7:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 7:00 AM - 7:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 7:30 AM - 8:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 8:00 AM - 8:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 8:30 AM - 9:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:00 AM - 9:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:30 AM - 10:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 10:00 AM - 10:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 10:30 AM - 11:00 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 11:00 AM - 11:30 AM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 11:30 AM - 12:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 12:00 PM - 12:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 12:30 PM - 1:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 1:00 PM - 1:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 1:30 PM - 2:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 2:00 PM - 2:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 2:30 PM - 3:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 3:00 PM - 3:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 3:30 PM - 4:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 4:00 PM - 4:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 4:30 PM - 5:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 5:00 PM - 5:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 5:30 PM - 6:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 6:00 PM - 6:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 6:30 PM - 7:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 7:00 PM - 7:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 7:30 PM - 8:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 8:00 PM - 8:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 8:30 PM - 9:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:00 PM - 9:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 9:30 PM - 10:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 10:00 PM - 10:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)',// 10:30 PM - 11:00 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 11:00 PM - 11:30 PM
+                    'linear-gradient(180deg, rgba(252, 227, 0) 0%, rgba(252, 227, 0) 50%, rgba(252, 227, 0) 100%)', // 11:30 PM - 12:00 AM
+                ];
 
-                    const index = Math.floor(minutes / 30);
-                    gradient.style.background = gradients[index % gradients.length];
-                }
+                const index = Math.floor(minutes / 30);
+                gradient.style.background = gradients[index % gradients.length];
+            }
 
-                function initYellowCircle() {
-                    const yellowCircle = document.getElementById('yellow-circle');
-                    const imageContainer = document.getElementById('image-section');
+            function initYellowCircle() {
+                const yellowCircle = document.getElementById('yellow-circle');
+                const imageContainer = document.getElementById('image-section');
 
-                    let targetX = 1000;
-                    let targetY = 0;
+                let targetX = 1000;
+                let targetY = 0;
 
-                    imageContainer.addEventListener('mousemove', (e) => {
-                        const rect = imageContainer.getBoundingClientRect();
-                        targetX = e.clientX - rect.left - yellowCircle.offsetWidth / 2;
-                        targetY = Math.min(e.clientY - rect.top - yellowCircle.offsetHeight / 2, imageContainer.offsetHeight - yellowCircle.offsetHeight);
-                    });
+                imageContainer.addEventListener('mousemove', (e) => {
+                    const rect = imageContainer.getBoundingClientRect();
+                    targetX = e.clientX - rect.left - yellowCircle.offsetWidth / 2;
+                    targetY = Math.min(e.clientY - rect.top - yellowCircle.offsetHeight / 2, imageContainer.offsetHeight - yellowCircle.offsetHeight);
+                });
 
-                    function animate() {
-                        yellowCircle.style.left = `${targetX}px`;
-                        yellowCircle.style.top = `${targetY}px`;
-                        requestAnimationFrame(animate);
-                    }
-
+                function animate() {
+                    yellowCircle.style.left = `${targetX}px`;
+                    yellowCircle.style.top = `${targetY}px`;
                     requestAnimationFrame(animate);
                 }
 
-                function changeCircleShapeBasedOnTime() {
-                    const now = new Date();
-                    const hours = now.getHours();
-                    const yellowCircle = document.getElementById('yellow-circle');
+                requestAnimationFrame(animate);
+            }
 
-                    if (hours >= 20 || hours < 5) {
-                        yellowCircle.classList.add('moon-shape');
-                    } else {
-                        yellowCircle.classList.remove('moon-shape');
-                    }
-                }
+            function changeCircleShapeBasedOnTime() {
+                const now = new Date();
+                const hours = now.getHours();
+                const yellowCircle = document.getElementById('yellow-circle');
 
-                window.onload = function () {
-                    getSunsetTime();
-                    updateGradient();
-                    setInterval(updateGradient, 1800000);
-                    initYellowCircle();
-                    changeCircleShapeBasedOnTime();
-                    setInterval(changeCircleShapeBasedOnTime, 60000);
+                if (hours >= 20 || hours < 5) {
+                    yellowCircle.classList.add('moon-shape');
+                } else {
+                    yellowCircle.classList.remove('moon-shape');
                 }
-            </script>
+            }
+
+            window.onload = function () {
+                getSunsetTime();
+                updateGradient();
+                setInterval(updateGradient, 1800000);
+                initYellowCircle();
+                changeCircleShapeBasedOnTime();
+                setInterval(changeCircleShapeBasedOnTime, 60000);
+            }
+        </script>
 </body>
 
 </html>
