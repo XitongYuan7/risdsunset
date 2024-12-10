@@ -12,6 +12,11 @@
             src: url("Brutal-trial-Light.otf") format("truetype");
         }
 
+        @font-face {
+            font-family: "SuisseIntl";
+            src: url("SuisseIntl-Regular.otf") format("truetype");
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -20,12 +25,13 @@
         }
 
         body {
-            font-family: "Brutal", sans-serif;
+            font-family: sans-serif;
+            height: 200vh;
             font-weight: 500;
             margin: 0;
             padding: 0;
             scroll-behavior: smooth;
-            background: linear-gradient(180deg, #ffd6e8 0%, #ff5bc8 50%, #c067fb 100%);
+            background:#FCE300;
         }
 
         .nav-bar {
@@ -35,94 +41,114 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 10px 17px 10px;
-            position: relative;
+            padding: 10px 10px 17px 20px;
+            position: fixed;
         }
 
-        .navbar-left nav a {
+
+        .title{
+
+       
             font-family: "Brutal", sans-serif;
-    font-size: 2rem;
-    text-align: left;
-    color: #ff44c1;
-    text-decoration: none; 
-    text-shadow: 0 0 2px white, 0 0 5px white, 0 0 7px white;
-    -webkit-text-stroke: 5px #16dbc7;
-    paint-order: stroke fill;
-        }
-
-        .navbar-left nav a:hover {
-            text-decoration: underline; 
-        }
-
-        .nav-links {
-            list-style-type: none;
-            display: flex;
-            gap: 50px;
+            font-weight: bold;
+            font-size: 1.9rem;
+            padding: 10px 10px 17px 0px;
         
         }
 
-        .nav-links li a {
-            color: #000;
-            text-decoration: none;
+        .text{
+
+       
+font-family: sans-serif;
+font-weight: ;
+font-size: 1.2rem;
+padding: 20px 10px 17px 0px;
+line-height: 120%;
+
+}
+
+        .navbar-left nav a {
+            font-family: "Brutal", sans-serif;
             font-size: 2rem;
+            text-align: left;
+            color: #ff44c1;
+            text-decoration: none;
+            text-shadow: 0 0 2px white, 0 0 5px white, 0 0 7px white;
+            -webkit-text-stroke: 5px #16dbc7;
             paint-order: stroke fill;
         }
 
-        .nav-links li a:hover {
+        .navbar-left nav a:hover {
             text-decoration: underline;
         }
 
-      
-
-        .project-row {
+        .scene {
+            perspective: 1000px;
+            height: 800px;
+            width: 800px;
             display: flex;
-            gap: 1px;
-            width: 100%;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .cube {
+            height: 530px;
+            width: 530px;
+            transform-style: preserve-3d;
+            transition: transform 0.2s;
+        }
+
+        .cube .face {
+            position: absolute;
+            height: 530px;
+            width: 530px;
+            background: #FCE300;
+            color: black;
+            display: flex;
+            justify-content: flex-start;
             align-items: flex-start;
+            flex-direction: column;
+            padding: 10px;
+            box-sizing: border-box;
         }
 
-        /* Work image container in Project Rows */
-        .work-image {
-            flex-grow: 1;
-            flex-basis: 0;
-            overflow: hidden;
-            position: relative;
-            min-width: 0;
-            outline: 1px solid black; /* Consistent border for all work images */
-        }
-
-        /* Hover effect for images in Project Rows */
-        .work-image:hover {
-            flex-grow: 1.2; /* Grow by 25% on hover */
-        }
-
-        /* Title styling */
-        .work-image p {
-            font-size: 1.2rem;
-            font-weight: 500;
-            padding: 10px; /* Reduced padding to ensure smaller space around the text */
-        }
-
-        /* Image styling in Project Rows */
-        .work-image img {
+        .cube .face img {
+            max-width: 100%;
             width: 100%;
             height: auto;
-            display: block;
         }
 
-        /* Responsiveness to make the layout look good at smaller screen sizes */
-        @media (max-width: 768px) {
-            .project-row {
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 20px;
-                padding: 20px;
-            }
+        .cube .front {
+            transform: rotateY(0deg) translateZ(265px);
+        }
 
-            .work-image {
-                flex-grow: 0;
-                transition: none;
+        .cube .back {
+            transform: rotateY(180deg) translateZ(265px) rotateX(180deg) scaleX(-1);
+        }
+
+        .cube .right {
+            transform: rotateY(90deg) translateZ(265px);
+        }
+
+        .cube .left {
+            transform: rotateY(-90deg) translateZ(265px);
+        }
+
+        .cube .top {
+            transform: rotateX(90deg) translateZ(265px);
+        }
+
+        .cube .bottom {
+            transform: rotateX(-90deg) translateZ(265px);
+        }
+
+        @media (max-width: 760px) {
+            .nav-bar {
+                padding: 20px;
             }
         }
     </style>
@@ -133,65 +159,54 @@
         <div class="navbar-left">
             <nav><a href="../">risd sunset</a></nav>
         </div>
-       
     </div>
 
-    <div class="content">
-        <!-- Flexbox Sections for Projects -->
-        <div class="project-row">
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.gif" />
+    <div class="scene">
+        <div class="cube" id="cube">
+            <div class="face front">
+                <div class="title">Design Center 704</div>
+                <img src="sunset-3.png" alt="Front Face Image">
+                <div class="text">"The most beautiful moment is none other than chatting about the Type+Code project with my favorite professor, Gabriel Drozdov, in this room, surrounded by the setting sun. Oh my god! How blissful it is! Two of the things I love most in life—design and sunsets—coming together..."</div>
             </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2136.gif" />
+            <div class="face back">
+                <div class="title">
+                    Woods-Gerry Gallery</div>
+                <img src="sunset-4.png"
+                    alt="Back Face Image">
+                <div class="text">"Today marks the opening of the RISD Graphic Design Triennial! The sunset made everything feel so special. As if that wasn’t enough, I was lucky to witness a once-in-a-lifetime sight—a pink aurora lighting up the night sky. It was truly unforgettable!"</div>
             </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.gif" />
+            <div class="face right">
+                <div>Right</div>
             </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2136.gif" />
+            <div class="face left">
+                <div>Left</div>
             </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.gif" />
+            <div class="face top">
+                <div class="title">Tillinghast Place</div>
+                <img src="sunset-2.png"
+                    alt="Top Face Image">
+                <div class="text">
+                    "The beach was completely empty, just us. Sharing the same pair of earphones, we listened to music, our feet splashing in the water as we walked along the shoreline. We talked, laughed, and for a moment, it felt like nothing else mattered. The best is really yet to come..."
+                </div>
             </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2136.gif" />
-            </div>
-        </div>
-
-        <div class="project-row">
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.jpg" />
-            </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.jpg" />
-            </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.jpg" />
-            </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.jpg" />
-            </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.jpg" />
-            </div>
-            <div class="work-image">
-                <p>Design Center 702</p>
-                <img src="IMG_2135.jpg" />
+            <div class="face bottom">
+                <div class="title">RISD Beach</div>
+                <img src="sunset-1.png" alt="Bottom Face Image">
+                <div class="text">"Basking in the sunlight, chatting and sketching with friends, then lying on the grass, breathing in the fresh air, dancing in the sunlight, listening to music—it feels like the whole world is ours. Oh wait, the world is ours. This place is just too beautiful..."</div>
             </div>
         </div>
     </div>
+
+    <script>
+        const cube = document.getElementById('cube');
+        let scrollPosition = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.scrollY;
+            const rotationAngle = (currentScroll / window.innerHeight) * 270;
+            cube.style.transform = `rotateX(${rotationAngle}deg)`;
+        });
+    </script>
 </body>
 
 </html>
